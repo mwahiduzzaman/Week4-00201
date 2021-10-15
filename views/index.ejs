@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='./content/app.css' />
+    <link rel='stylesheet' href= "./@fortawesome/fontawesome-free/css/all.min.css"/>
+    <link rel='stylesheet' href= "./bootstrap/dist/css/bootstrap.min.css"/>
+  </head>
+
+
+  <body>
+
+
+    <!-- Nav Bar section-->
+    <%- include('./components/header.ejs'); %>
+
+    <!-- Nav Bar section-->
+<!-- Main ssection-->
+    <main>
+      <%- include('./content/'+ page +'.ejs'); %>
+    </main>
+<!-- Main ssection-->
+  
+
+      <!-- bottom-->
+
+      <%- include('./components/footer.ejs'); %>
+      <!-- bottom-->
+
+    
+
+
+    <!-- java script section>-->
+    <script>src="./scripts/app.js"</script>
+
+    <script>src="./jquery/dist/jquery.min.js"</script> 
+    <script>src="./bootstrap/dist/js/bootstrap.boundle.min.js"</script> 
+  </body>
+</html>
